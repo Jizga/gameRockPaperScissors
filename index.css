@@ -1,3 +1,61 @@
-.chosen {
-    background-color: blueviolet;
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=VT323&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=VT323&display=swap");
+
+body {
+  background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fd746c,
+    #2c3e50
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fd746c,
+    #2c3e50
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#titleGame {
+  font-family: "Fredericka the Great", cursive;
+  color: whitesmoke;
+}
+
+#area {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: whitesmoke;
+}
+
+.chosenP {
+  background-color: rgba(110, 182, 204, 0.733);
+}
+
+.chosenC {
+  background-color: rgba(247, 171, 7, 0.459);
+}
+
+#contadorP {
+  background-color: rgba(110, 182, 204, 0.733);
+  width: 4rem;
+  height: 2rem;
+  font-family: "Courgette", cursive;
+  color: whitesmoke;
+}
+
+#contadorC {
+  width: 4rem;
+  height: 2rem;
+  background-color: rgba(247, 171, 7, 0.459);
+  font-family: "Courgette", cursive;
+  color: whitesmoke;
+}
+
+#messageGame {
+  font-family: "Courgette", cursive;
+  background-color:rgba(245, 245, 245, 0.342);
+  margin: 1rem 0 1rem 0;
+  padding: 0.5rem;
+  color: whitesmoke;
 }

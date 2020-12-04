@@ -16,20 +16,22 @@
       integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
       crossorigin="anonymous"
     />
+    
     <link rel="stylesheet" href="index.css" />
     <script async src="./app.js"></script>
   </head>
   <body>
     <div class="container">
-      <h1 class="text text-center my-4">Rock, Paper or Scissors Game</h1>
+      <h1 class="text text-center" id="titleGame">Rock, Paper or Scissors Game</h1>
       <div class="row">
         <div class="col">
-          <h5 class="text text-center my-2">Your Area</h5>
-          <div class="card-body text-center" id="contadorP"></div>
+          <h4 class="text text-center my-2" id="area">Your Area</h4>
+          <h4 class="text text-center float-right" id="contadorP">0</h4>
+          <br />
           <br />
           <div class="row row-cols-1 row-cols-md-2">
             <div class="col mb-4">
-              <div class="card border-0">
+              <div class="card-body-none border-0">
                 <button
                   onclick="playerElection(this)"
                   id="rock"
@@ -47,7 +49,7 @@
               </div>
             </div>
             <div class="col mb-4">
-              <div class="card border-0">
+              <div class="card-body-none border-0">
                 <button
                   onclick="playerElection(this)"
                   id="paper"
@@ -65,7 +67,7 @@
               </div>
             </div>
             <div class="col mb-4">
-              <div class="card border-0">
+              <div class="card-body-none border-0">
                 <button
                   onclick="playerElection(this)"
                   id="scissors"
@@ -83,7 +85,7 @@
               </div>
             </div>
             <div class="col mb-4">
-              <div class="card border-0">
+              <div class="card-body-none border-0">
                 <button
                   onclick="playerElection(this)"
                   id="bomb"
@@ -104,53 +106,58 @@
         </div>
         <div class="row">
           <div class="col">
-            <h5 class="text text-center my-2">Computer Area</h5>
-            <div class="card-body text-center" id="contadorC"></div>
+            <h4 class="text text-center my-2" id="area">Computer Area</h4>
+            <h4 class="text text-center float-left" id="contadorC">0</h4>
+            <br />
             <br />
             <div class="row row-cols-1 row-cols-md-2 border-left">
               <div class="col mb-4">
-                <div class="card border-0">
-                  <img
-                    src="imagenes/rock.png"
-                    alt="Rock!"
-                    width="150"
-                    height="150"
-                    title="Rock!"
-                    id="rockC"
-                  />
+                <div class="card-body-none border-0">
+                  <button id="rockC" type="button" class="btn btn-border-none">
+                    <img
+                      src="imagenes/rock.png"
+                      alt="Rock!"
+                      width="150"
+                      height="150"
+                      title="Rock!"
+                      id="rockC"
+                    />
+                  </button>
                 </div>
               </div>
               <div class="col mb-4">
-                <div class="card border-0">
-                  <img
-                    src="imagenes/paper.png"
-                    alt="Paper!"
-                    width="150"
-                    height="150"
-                    title="Paper!"
-                    id="paperC"
-                  />
+                <div class="card-body-none border-0">
+                  <button id="paperC" type="button" class="btn btn-border-none">
+                    <img
+                      src="imagenes/paper.png"
+                      alt="Paper!"
+                      width="150"
+                      height="150"
+                      title="Paper!"
+                    />
+                  </button>
                 </div>
               </div>
               <div class="col mb-4">
-                <div class="card border-0">
+                <div class="card-body-none border-0">
+                  <button id="scissorsC" type="button" class="btn btn-border-none">
                   <img
                     src="imagenes/scissors.png"
                     alt="Scissors!"
                     width="150"
                     height="150"
                     title="Scissors!"
-                    id="scissorsC"
                   />
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card-body text-center" id="messageGame"></div>
-        
+    </div>
+      <div class="card-body-none">
+        <h3 class="card-body-none text-center" id="messageGame">Who will win the game?</h3>
       </div>
     </div>
   </body>

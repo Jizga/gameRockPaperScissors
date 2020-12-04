@@ -6,20 +6,20 @@ let contadorP = 0;
 let contadorC = 0;
 
 function computerElection() {
-  document.getElementById("rockC").classList.remove("chosen");
-  document.getElementById("paperC").classList.remove("chosen");
-  document.getElementById("scissorsC").classList.remove("chosen");
+  document.getElementById("rockC").classList.remove("chosenC");
+  document.getElementById("paperC").classList.remove("chosenC");
+  document.getElementById("scissorsC").classList.remove("chosenC");
 
   computer = cards[Math.floor(Math.random() * (3 - 0)) + 0];
 
-  document.getElementById(computer + "C").classList.add("chosen");
+  document.getElementById(computer + "C").classList.add("chosenC");
 }
 
 function playerElection(election) {
-  document.getElementById("rock").classList.remove("chosen");
-  document.getElementById("paper").classList.remove("chosen");
-  document.getElementById("scissors").classList.remove("chosen");
-  document.getElementById("bomb").classList.remove("chosen");
+  document.getElementById("rock").classList.remove("chosenP");
+  document.getElementById("paper").classList.remove("chosenP");
+  document.getElementById("scissors").classList.remove("chosenP");
+  document.getElementById("bomb").classList.remove("chosenP");
 
   if (election.id === "rock") {
     player = "rock";
@@ -31,7 +31,7 @@ function playerElection(election) {
     player = "bomb";
   }
 
-  document.getElementById(election.id).classList.add("chosen");
+  document.getElementById(election.id).classList.add("chosenP");
 
   computerElection();
   game();
