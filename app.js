@@ -74,5 +74,5 @@ function game() {
   document.getElementById("messageGame").innerHTML = msg;
   document.getElementById("contadorP").innerHTML = contadorP;
   document.getElementById("contadorC").innerHTML = contadorC;
-  console.log(contador);
+ 
 }
