@@ -21,16 +21,16 @@
     <script async src="./app.js"></script>
   </head>
   <body>
-    <div class="container">
-      <h1 class="text text-center" id="titleGame">Rock, Paper or Scissors Game</h1>
-      <div class="row">
+    <div class="container row-cols-1 col-*-12">
+      <h1 class="text text-center pt-2 col-*-12" id="titleGame">Rock, Paper or Scissors Game</h1>
+      <div class="row row-cols-2">
         <div class="col">
-          <h4 class="text text-center my-2" id="area">Your Area</h4>
+          <h4 class="text text-center my-2 pt-3" id="area">Your Area</h4>
           <h4 class="text text-center float-right" id="contadorP">0</h4>
           <br />
           <br />
           <div class="row row-cols-1 row-cols-md-2">
-            <div class="col mb-4">
+            <div class="col-lg-xl-6 mb-4 col-sm-md-2">
               <div class="card-body-none border-0">
                 <button
                   onclick="playerElection(this)"
@@ -105,13 +105,13 @@
           </div>
         </div>
         <div class="row">
-          <div class="col">
-            <h4 class="text text-center my-2" id="area">Computer Area</h4>
+          <div class="col-*-6 mb-4 pl-5">
+            <h4 class="text text-center my-2 pt-3" id="area">Computer Area</h4>
             <h4 class="text text-center float-left" id="contadorC">0</h4>
             <br />
             <br />
-            <div class="row row-cols-1 row-cols-md-2 border-left">
-              <div class="col mb-4">
+            <div class="row row-cols-1 row-cols-md-2 border-left pl-5">
+              <div class="col-lg-xl-6 mb-4 col-sm-md-2">
                 <div class="card-body-none border-0">
                   <button id="rockC" type="button" class="btn btn-border-none">
                     <img
@@ -155,9 +155,9 @@
           </div>
         </div>
       </div>
-    </div>
-      <div class="card-body-none">
-        <h3 class="card-body-none text-center" id="messageGame">Who will win the game?</h3>
+      </div>
+      <div class="card-body-none row-cols-12">
+        <h3 class="text-center" id="messageGame">Who will win the game?</h3>
       </div>
     </div>
   </body>
